@@ -3,9 +3,9 @@
 
 Options de commande :
 
-  -h, --help    Affiche cette aide
-  -l            Affiche le contenu de la liste
-  -a [int]      Ajoute 1 ou plusieurs elements dans liste.csv
+  - -h, --help    Affiche cette aide
+  - -l            Affiche le contenu de la liste
+  - -a [int]      Ajoute 1 ou plusieurs elements dans liste.csv
   -c            Supprime tous les elements dans liste.csv
   -s            --max / --min / --moy / --sum
   --max         Affiche la valeur maximale dans liste.csv
