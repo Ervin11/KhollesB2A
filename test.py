@@ -5,8 +5,8 @@ import csv
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-l", help="Affiche le contenu de la liste", action="store_true")
-parser.add_argument("-a", type=int, help="Ajoute les éléments dans la liste", nargs='+')
-parser.add_argument("-c", help="Supprime tous les éléments de la liste", action="store_true")
+parser.add_argument("-a", type=int, help="Ajoute les elements dans liste.csv", nargs='+')
+parser.add_argument("-c", help="Supprime tous les elements de la liste", action="store_true")
 parser.add_argument("-s", "--max", help="Affiche la valeur maximum de la liste", action="store_true")
 
 args = parser.parse_args()
@@ -33,8 +33,18 @@ elif args.c:
 elif args.max:
 
     with open('liste.csv', 'r') as liste:
-        reader = csv.reader(liste)
-        print(max(reader))
+        reader = csv.reader(liste, dialect='excel')
+
+        tab = []
+
+        for row in reader:
+            for x in row:
+                x = int(x)
+                tab.append(x)
+
+        yo = max(tab)
+        print(yo)
+
 
 
         
