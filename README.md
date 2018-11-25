@@ -1,8 +1,8 @@
 
-# Programme CLI - Python 3.7
+# Kholles B2A
 
 
-Programme en Python qui permet : 
+# Programme CLI en Python qui permet : 
 
 - d'écrire des nombres dans un fichier CSV
 - d'en afficher le contenu
