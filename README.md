@@ -1,7 +1,4 @@
 
-# Kholles B2A
-
-
 # Programme CLI en Python qui permet : 
 
 - d'écrire des nombres dans un fichier CSV
@@ -14,7 +11,7 @@
 - de trier et afficher les valeurs dans un ordre croissant
 - de trier et afficher les valeurs dans un ordre décroissant
 
-Options de commande :
+# Options de commande :
 
   - -h, --help    Affiche cette aide
   - -l            Affiche le contenu de la liste
