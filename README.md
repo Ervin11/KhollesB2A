@@ -24,3 +24,13 @@
   - --sum         / Affiche la somme des valeurs de liste.csv
   - -t            / Trie les elements de liste.csv dans l'ordre croissant / --desc
   - --desc        / Trie les elements de liste.csv dans l'ordre decroissant
+
+# Exemple d'utilisation
+
+Insertion d'elements : 
+
+- ./SALIF_Ervin_kholle_1.py -a 1 2 10 43 21 102 5 
+
+Affichage du contenu du fichier CSV :
+
+- ./SALIF_Ervin_kholle_1.py -l
