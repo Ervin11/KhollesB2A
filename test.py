@@ -23,7 +23,7 @@ elif args.a:
 
     with open('liste.csv', 'a') as liste:
         writer = csv.writer(liste)
-        writer.writerow(args.a)
+        writer.writerows([[a] for a in args.a])
 
 elif args.c:
 
@@ -34,8 +34,12 @@ elif args.max:
 
     with open('liste.csv', 'r') as liste:
         reader = csv.reader(liste)
-        
+
         for row in reader:
-            print(int(row))
+
+            print(type(row))
+            # results = list(map(int, row))
+            # print(max(results))
+            
     
     
