@@ -1,0 +1,41 @@
+#!/usr/local/bin/python3.7
+
+import argparse
+import csv
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-l", help="Affiche le contenu de la liste", action="store_true")
+parser.add_argument("-a", type=int, help="Ajoute les éléments dans la liste", nargs='+')
+parser.add_argument("-c", help="Supprime tous les éléments de la liste", action="store_true")
+parser.add_argument("-s", "--max", help="Affiche la valeur maximum de la liste", action="store_true")
+
+args = parser.parse_args()
+
+if args.l:
+    
+    with open('liste.csv', 'r') as liste:
+        reader = csv.reader(liste)
+
+        for row in reader:
+            print(' '.join(row))
+
+elif args.a:
+
+    with open('liste.csv', 'a') as liste:
+        writer = csv.writer(liste)
+        writer.writerow(args.a)
+
+elif args.c:
+
+    truncate_list = open("liste.csv", "w+")
+    truncate_list.close()
+
+elif args.max:
+
+    with open('liste.csv', 'r') as liste:
+        reader = csv.reader(liste)
+        
+        for row in reader:
+            print(int(row))
+    
+    
