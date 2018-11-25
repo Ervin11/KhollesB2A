@@ -14,8 +14,8 @@ parser.add_argument("--max", help="Affiche la valeur maximale dans liste.csv", a
 parser.add_argument("--min", help="Affiche la valeur minimale dans liste.csv", action="store_true")
 parser.add_argument("--moy", help="Affiche la moyenne des valeurs de liste.csv", action="store_true")
 parser.add_argument("--sum", help="Affiche la somme des valeurs de liste.csv", action="store_true")
-parser.add_argument("-t", help="Trie liste.csv dans l'ordre croissant / --desc", action="store_true")
-parser.add_argument("--desc", help="Trie liste.csv dans l'ordre decroissant", action="store_true")
+parser.add_argument("-t", help="Trie les elements de liste.csv dans l'ordre croissant / --desc", action="store_true")
+parser.add_argument("--desc", help="Trie les elements de liste.csv dans l'ordre decroissant", action="store_true")
 
 
 args = parser.parse_args()
