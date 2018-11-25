@@ -34,12 +34,13 @@ elif args.max:
 
     with open('liste.csv', 'r') as liste:
         reader = csv.reader(liste)
+        print(max(reader))
 
-        for row in reader:
 
-            print(type(row))
-            # results = list(map(int, row))
-            # print(max(results))
+        
+        
+        
+        
             
     
     
