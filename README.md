@@ -1,11 +1,18 @@
 
 # Programme CLI - Python 3.7
 
+
 Programme en Python qui permet : 
 
-- d'écrire des nombres dans un fichier csv
-- de les afficher
-- de les supprimer,
+- d'écrire des nombres dans un fichier CSV
+- d'en afficher le contenu
+- d'en supprimer le contenu
+- d'afficher la valeur maximale
+- d'afficher la valeur minimale
+- d'afficher la moyenne des valeurs
+- d'afficher la somme des valeurs
+- de trier et afficher les valeurs dans un ordre croissant
+- de trier et afficher les valeurs dans un ordre décroissant
 
 Options de commande :
 
