@@ -34,3 +34,27 @@ Insertion d'elements :
 Affichage du contenu du fichier CSV :
 
 - ./SALIF_Ervin_kholle_1.py -l
+
+Affichage de la valeur maximale : 
+
+- ./SALIF_Ervin_kholle_1.py -s --max
+
+Affichage de la valeur minimale : 
+
+- ./SALIF_Ervin_kholle_1.py -s --min
+
+Affichage de la moyenne :
+
+- ./SALIF_Ervin_kholle_1.py -s --moy
+
+Affichage de la somme :
+
+- ./SALIF_Ervin_kholle_1.py -s --sum
+
+Affichage dans l'ordre croissant :
+
+./SALIF_Ervin_kholle_1.py -t
+
+Affichage dans l'ordre decroissant :
+
+./SALIF_Ervin_kholle_1.py -t --desc
